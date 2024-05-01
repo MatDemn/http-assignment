@@ -1,0 +1,16 @@
+{
+    "appenders": {
+      "fileLogger": {
+        "type": "file",
+        "filename": "logs/log.txt",
+        "maxLogSize": 10485760
+      },
+      "consoleLogger": {
+        "type": "stdout",
+        "category": "console"
+      }
+    },
+    "categories": {
+      "default": { "appenders": [ "fileLogger", "consoleLogger"], "level": "DEBUG" }
+    }
+  }
